@@ -11,6 +11,8 @@ var    - does not have scope, assigned in one place can be changed anywhere.(cur
 
 ====================================================================================================================
 
+ECMA script(website to check TC39): is just a standard method for scripting languages, javascript.
+
 datatypes: number => 2^53, string => "", bigint, boolean => true/false, null, undefined, symbol, object
 
 null      - ex: let temperature = null, null is a OBJECT used to represent empty value.
