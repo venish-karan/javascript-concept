@@ -26,3 +26,15 @@ typeof undefined - undefined.
 
 ====================================================================================================================
 
+Datatype Conversion: 
+
+Number - ex: Number("33")       => 33
+         ex: Number("33abc")    => NaN
+         ex: Number(null)       => 0 
+         ex: Number(undefined)  => NaN
+         ex: Number(true/false) => 1/0
+
+Boolean - ex: Boolean(1/0) => true/false
+          ex: Boolean("hi"/"") => true/false
+
+String - ex: String(33) => 33, typeof 33 => string
