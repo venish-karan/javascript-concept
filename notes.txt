@@ -1,0 +1,26 @@
+// print all the variables at once in console using console.table().
+console.table([var1, var2, var3])
+
+====================================================================================================================
+
+variables: const, let, var
+
+const  - cannot change variable once assigned.
+let    - have scope, if assigned inside a if condition will be available inside that block not anywhere else.
+var    - does not have scope, assigned in one place can be changed anywhere.(currently not used)
+
+====================================================================================================================
+
+datatypes: number => 2^53, string => "", bigint, boolean => true/false, null, undefined, symbol, object
+
+null      - ex: let temperature = null, null is a OBJECT used to represent empty value.
+undefined - ex: let num, num variable is declared but not assigned/defined so it is undefined.
+symbol    - ex: used in figma tools, react, used to find uniqueness in different components.
+
+typeof: datatypes of variables.
+
+typeof null      - object.
+typeof undefined - undefined.
+
+====================================================================================================================
+
