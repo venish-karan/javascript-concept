@@ -69,3 +69,50 @@ undefined -> ==, <=, >=, >, <    -> same result as false.
 
 Datatypes summary: 
 
+Javascript is dynamically typed language as we dont need to specify the data type while declaring variables.
+
+In js data is stored and accessed from memory in two types:
+
+primitive data types     : string, number, null, undefined, boolean, symbol, bigint.
+non-primitive data types : array, objects, functions.
+
+functions: 
+function sayHello(){ // remember class creates objects for reference
+    return "Hello World"
+}
+
+sayHello.greeting = "Hii"
+
+Symbols: 
+
+const id = Symbol('123')
+const anotherId = Symbol('123')
+
+console.log(id === anotherId) // op: false
+
+====================================================================================================================
+
+Stack and Heap memory:
+
+Memory is freed automatically by garage collector.
+
+Stack memory(primitive) - used in primitive datatype(because copy of actual value is stored in another variable so it is independent of the actual value) 
+               ex: name = "venish"
+               anotherName = name
+               anotherName = "hi"
+               op: name, anotherName -> venish, hi 
+
+Heap memory(non-primitive)  - used in non-primitive datatype(because actual(original) value is modified)
+                ex: userOne = {
+                    email: "eamil@gmail.com",
+                    name: "venish"
+                }
+
+                userTwo = userOne
+
+                userTwo.email = "changed@gmail.com"
+
+                op: userOne, userTwo -> same as userTwo, {email: "changed@gmail.com", name: "venish}
+
+====================================================================================================================
+
