@@ -116,3 +116,55 @@ Heap memory(non-primitive)  - used in non-primitive datatype(because actual(orig
 
 ====================================================================================================================
 
+Strings:
+correct method to use variables in string(called as string interpolation): `Hii example, ${variable}`
+
+2 types of defination in string: const var = "string"
+                                 consr var = new String("string")
+
+string functions: var.length, 
+                  toUpperCase, 
+                  charAt('s')         => gives positions of the character, 
+                  indexOf(2)          => gives character at that index, 
+                  substring(0, 4)     => no negative indexing in substring, 
+                  slice(-6, 4), 
+                  slice(0, 4)         => same result for both negative index can be used here, 
+                  trim(), 
+                  replace('%20', '-') => used in url, 
+                  includes(), 
+                  split("")
+
+====================================================================================================================
+
+Number and Maths:
+
+2 types of defination in number : const var = 100 op: 100
+                                  const varNum = new Number(100) op: [Number: 100]
+funnctions in number            :
+                                 varNum.toFixed(2) op: 100.00 (precision function is toFixed())
+                                 varNum.toString() op: 100 
+                                 varNum = 123.899
+                                 varNum.toPrecision(4) op: 123.9 
+                                 varNum.toPrecision(3) op: 123 
+                                 varNum.toPrecision(2) op: 1.2e+2 
+
+                                 const hundreds = 1000000
+                                 console.log(hundreds.toLocaleString('en-IN'))
+
+                                 Number.MAX_VALUE (not a function) => return max value
+                                 Number.MIN_VALUE
+
+Maths:
+
+Math.abs(-4)    => converts negative to positive alone
+Math.round(3.4) => round off to 3
+.ceil(4.2)      => 5
+.floor(4.9)     => 4
+
+//important
+Math.random()   => returns value only ranging from 0 to 1
+                   ex:
+                   const min = 10
+                   const max = 20
+
+Math.floor(Math.random() * (max - min + 1)) + min // + 1 to avoid 10
